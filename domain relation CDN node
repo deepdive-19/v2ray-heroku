@@ -1,0 +1,29 @@
+172.17.41.126  baiduimage-app
+172.16.130.182 alibaba-ap
+
+ap-v2ray.herokuapp.com    young-water-5d5c.bbdg1234.workers.dev
+baiduimage.herokuapp.com  dark-mud-061a.bbdg1234.workers.dev
+alibaba-ap.herokuapp.com  noisy-hall-8cc1.bbdg1234.workers.dev
+meituan-app.herokuapp.com steep-waterfall-100f.bbdg1234.workers.dev
+qq-ap.herokuapp.com       muddy-frost-0463.bbdg1234.workers.dev 
+bd1-app.herokuapp.com     orange-meadow-71f1.bbdg1234.workers.dev
+bd2-app.herokuapp.com	  dawn-grass-b03f.bbdg1234.workers.dev
+bd3-app.herokuapp.com	  bitter-wildflower-939d.bbdg1234.workers.dev
+bd4-app.herokuapp.com	  solitary-tooth-c94b.bbdg1234.workers.dev
+bd5-app.herokuapp.com	  purple-paper-ad1c.bbdg1234.workers.dev
+
+
+
+
+
+
+addEventListener(
+"fetch",event => {
+let url=new URL(event.request.url);
+url.hostname="baiduimage.herokuapp.com";
+let request=new Request(url,event.request);
+event. respondWith(
+fetch(request)
+)
+}
+)
